@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/countFragment">
+
+    <fragment
+        android:id="@+id/countFragment"
+        android:name="com.example.sharedviewmodelexample.CountFragment"
+        android:label="fragment_count"
+        tools:layout="@layout/fragment_count" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.example.sharedviewmodelexample.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" />
+</navigation>

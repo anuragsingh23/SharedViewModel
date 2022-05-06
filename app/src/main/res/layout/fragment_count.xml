@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".CountFragment"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_egg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="@+id/tvScore"
+        app:layout_constraintStart_toStartOf="@+id/tvScore"
+        app:layout_constraintTop_toBottomOf="@+id/tvScore"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_egg"
+        android:text="@string/score"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_egg"
+        app:layout_constraintStart_toStartOf="@+id/img_egg"
+        app:layout_constraintTop_toBottomOf="@+id/img_egg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
